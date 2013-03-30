@@ -18,7 +18,7 @@ public class BaseActivity extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()){
 		case R.id.computer:
-			Intent intent = new Intent(this,NewActivity.class);
+			Intent intent = new Intent(this,CommentsActivity.class);
 			intent.putExtra("screenText", "Hello World");
 			startActivity(intent);
 		return true;

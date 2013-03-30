@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class NewActivity extends BaseActivity {
+public class CommentsActivity extends BaseActivity {
 
 	Fragment pictureFragment = new PictureFragment();
 	Fragment sideFragment = new SideFragment();

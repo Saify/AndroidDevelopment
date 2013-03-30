@@ -18,7 +18,7 @@ public class MainActivity extends BaseActivity {
 	
 	
 	public void onClick(View v){
-		Intent intent = new Intent(this,NewActivity.class);
+		Intent intent = new Intent(this,CommentsActivity.class);
 		intent.putExtra("screenText", "Hello World");
 		startActivity(intent);
 	}
