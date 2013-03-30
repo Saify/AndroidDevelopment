@@ -16,4 +16,5 @@
   <string name="text_menu_xbox">Xbox</string>
   <string name="change_fragment">Change Fragment</string>
   <string name="button_query">Query</string>
+  <string name="text_time">Time</string>
 </resources>

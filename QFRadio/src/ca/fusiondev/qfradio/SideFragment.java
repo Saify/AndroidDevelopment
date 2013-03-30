@@ -1,40 +1,43 @@
 package ca.fusiondev.qfradio;
 
-import java.sql.Timestamp;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import org.xml.sax.Parser;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.format.DateUtils;
+import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class SideFragment extends Fragment {
 	View view;
 	SQLiteDatabase db;
 	DBHelper dbHelper;
+	ListView list;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		dbHelper = new DBHelper(getActivity());
 		db = dbHelper.getWritableDatabase();
-		view = inflater.inflate(R.layout.new_activity, container, false);
-		Button comment = (Button) view.findViewById(R.id.button1); 
+		view = inflater.inflate(R.layout.side_fragment, container, false);
+		list = (ListView) view.findViewById(R.id.listComments);
+		String[] from = {DBHelper.NAME,DBHelper.LOCATION,DBHelper.COMMENT,DBHelper.TIME};
+		String[] columns = {DBHelper.C_ID,DBHelper.NAME,DBHelper.LOCATION,DBHelper.COMMENT,DBHelper.TIME};
+		int[] to = {R.id.lblName,R.id.lblLocation,R.id.lblComment,R.id.lblTime};
 		
+		Cursor cursor = db.query(DBHelper.TABLE_NAME, columns, null, null, null, null, null);
+		SimpleCursorAdapter adapter = new SimpleCursorAdapter(getActivity(), R.layout.list_view, cursor, from, to);
+		list.setAdapter(adapter);
+		Button comment = (Button) view.findViewById(R.id.button1); 
 		comment.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

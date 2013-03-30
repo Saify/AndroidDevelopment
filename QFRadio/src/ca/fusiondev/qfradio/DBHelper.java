@@ -22,7 +22,7 @@ public class DBHelper extends SQLiteOpenHelper {
 			+ NAME + " text, " 
 			+ COMMENT + " text, "
 			+ LOCATION + " text, "
-			+ TIME + " Integer);";
+			+ TIME + " Date);";
 
 	public DBHelper(Context context) {
 		super(context, DATABASE_NAME, null, VERSION);
