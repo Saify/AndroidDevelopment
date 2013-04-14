@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Football Pitch Booking</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tv_addSubValue">You Value is 0</string>
+    <string name="bt_add">Add</string>
+    <string name="bt_sub">Sub</string>
+    <string name="et_hint_command">Type a command</string>
+    <string name="bt_result">Try Command</string>
+    <string name="tv_results">Invalid</string>
+    <string name="togb_command">On</string>
+
+</resources>
