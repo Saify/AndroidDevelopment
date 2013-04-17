@@ -11,5 +11,6 @@
     <string name="bt_result">Try Command</string>
     <string name="tv_results">Invalid</string>
     <string name="togb_command">On</string>
+    <string name="btEmail">Send Email</string>
 
 </resources>
