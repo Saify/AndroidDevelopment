@@ -56,6 +56,16 @@
             android:screenOrientation="portrait"
             >
         </activity>
+         <activity
+            android:name="com.androiddev.footballpitchbooking.Data"
+            android:label="Activity Data Exchange" 
+            >
+        </activity>
+          <activity
+            android:name="com.androiddev.footballpitchbooking.OppendClass"
+            android:label="Activity Data Exchange" 
+            >
+        </activity>
     </application>
 
 </manifest>

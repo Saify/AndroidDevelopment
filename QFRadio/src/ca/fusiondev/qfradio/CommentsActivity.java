@@ -24,12 +24,12 @@ public class CommentsActivity extends BaseActivity {
 		ft.replace(R.id.framelayout,sf,"SIDE");
 		ft.commit();
 	}	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_new_activity, menu);
-		return true;
-	}
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		// Inflate the menu; this adds items to the action bar if it is present.
+//		getMenuInflater().inflate(R.menu.menu_new_activity, menu);
+//		return true;
+//	}
 	
 	public void changeFragment(View v){
 		

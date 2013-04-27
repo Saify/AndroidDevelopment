@@ -1,4 +1,4 @@
-package com.androiddev.footballpitchbooking;
+	package com.androiddev.footballpitchbooking;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.ListView;
 public class Menu extends android.app.ListActivity {
 	
 	
-	String classes[] = {"MathWork","TextPlay", "Email","Camera", "Example1"};
+	String classes[] = {"MathWork","TextPlay", "Email","Camera", "Data"};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
